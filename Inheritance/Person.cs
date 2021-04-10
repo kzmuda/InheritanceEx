@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Inheritance
 {
-    internal class Person
+    public class Person
     {
         protected string FirstName { get; set; }
 

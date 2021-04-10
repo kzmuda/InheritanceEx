@@ -22,10 +22,7 @@ namespace Inheritance
 
         static void Main(string[] args)
         {
-            Employee employee = new Employee("Jan", "Kowalski");
-            employee.FirstName = "Malinowski";
-
-            Print(employee);
+            
 
             // Manager manager = new Manager("Ania", "Nowak", 2000);
             //
