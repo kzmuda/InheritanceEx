@@ -9,16 +9,37 @@ namespace Polymorphism
     {
         static void Main(string[] args)
         {
+            #region TEMP
+            //// DO NOT DO like this!! :) polymorphism is better! :)
+            /*
+            BasicAccount a1 = new BasicAccount(20);
+            //a1.balance = 20;
+            BasicAccount a2 = new BasicAccount(10, 2);
+            //a2.balance = 10;
+            //a2.interest = 2;
+            List<BasicAccount> list = new List<BasicAccount> { a1, a2 };
+            
+            BasicAccount a3 = new BasicAccount(30, 10);
+            
+            
+            BasicBank bank = new BasicBank(list);
+            bank.AddAccountToList(a3);
+            
+            Console.WriteLine(bank.Total());
+            */
+        #endregion
+
+
             Account a1 = new Account(20);
             //a1.balance = 20;
             SavingAccount a2 = new SavingAccount(10, 2);
             //a2.balance = 10;
             //a2.interest = 2;
             List<Account> list = new List<Account> { a1, a2 };
-
+            
             SavingAccount a3 = new SavingAccount(30, 10);
-
-
+            
+            
             Bank bank = new Bank(list);
             bank.AddAccountToList(a3);
             
