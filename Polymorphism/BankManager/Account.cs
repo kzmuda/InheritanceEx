@@ -8,7 +8,17 @@ namespace Polymorphism.BankManager
 {
     public class Account
     {
-        public decimal balance;
+        protected decimal balance;
+
+        public Account(decimal balance)
+        {
+            this.balance = balance;
+        }
+
+        public virtual decimal GetBalance()
+        {
+            return balance;
+        }
 
     }
 }

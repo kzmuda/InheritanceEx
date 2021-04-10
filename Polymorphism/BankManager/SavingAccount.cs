@@ -8,6 +8,16 @@ namespace Polymorphism.BankManager
 {
     class SavingAccount: Account
     {
-        public decimal interest;
+        private decimal interest;
+
+        public SavingAccount(decimal balance, decimal interest): base(balance)
+        {
+            this.interest = interest;
+        }
+
+        public override decimal GetBalance()
+        {
+            return base.GetBalance() + interest;
+        }
     }
 }

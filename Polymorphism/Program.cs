@@ -9,15 +9,19 @@ namespace Polymorphism
     {
         static void Main(string[] args)
         {
-            Account a1 = new Account();
-            a1.balance = 20;
-            SavingAccount a2 = new SavingAccount();
-            a2.balance = 10;
-            a2.interest = 2;
+            Account a1 = new Account(20);
+            //a1.balance = 20;
+            SavingAccount a2 = new SavingAccount(10, 2);
+            //a2.balance = 10;
+            //a2.interest = 2;
             List<Account> list = new List<Account> { a1, a2 };
+
+            SavingAccount a3 = new SavingAccount(30, 10);
 
 
             Bank bank = new Bank(list);
+            bank.AddAccountToList(a3);
+            
             Console.WriteLine(bank.Total());
 
 
