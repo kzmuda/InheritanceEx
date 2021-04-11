@@ -7,8 +7,9 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Rectangle rectangle = new Rectangle();
-            Person person = new Person("a", "b");
+            LineSegment linesegment = new LineSegment(0, 0, 1, 1);
+
+            Console.WriteLine(linesegment.CalculateLength());
         }
     }
 }
