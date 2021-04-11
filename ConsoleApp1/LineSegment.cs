@@ -28,13 +28,20 @@ public class LineSegment
 
 	public double CalculateLength()
     {
+		/*
 		if (startPoint is MyPoint3D)
         {
 			MyPoint3D startPointz = (MyPoint3D)startPoint;
 			MyPoint3D stopPointz = (MyPoint3D)stopPoint;
 
-			return Math.Sqrt(Math.Pow(startPointz.x - stopPointz.x, 2) + Math.Pow(startPointz.y - stopPointz.y, 2) + Math.Pow(startPointz.z - stopPointz.z, 2));
-		}
-		return Math.Sqrt(Math.Pow(startPoint.x - stopPoint.x, 2) + Math.Pow(startPoint.y - stopPoint.y, 2));
-    }
+			//return Math.Sqrt(Math.Pow(startPointz.x - stopPointz.x, 2) + Math.Pow(startPointz.y - stopPointz.y, 2) + Math.Pow(startPointz.z - stopPointz.z, 2));
+            return startPointz.GetDistanceFromPoint(stopPointz);
+        }
+		
+        //return Math.Sqrt(Math.Pow(startPoint.x - stopPoint.x, 2) + Math.Pow(startPoint.y - stopPoint.y, 2));
+        return startPoint.GetDistanceFromPoint(stopPoint);
+		*/
+
+        return startPoint.GetDistanceFromPoint(stopPoint);
+	}
 }
